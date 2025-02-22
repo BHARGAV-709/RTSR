@@ -3,9 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>The Book Cycle</title>
+    <style>
+        *{
+            background-color: azure;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul{
+            display: flex;
+            background-color: rgb(255, 191, 0);
+            height: 100px;
+            position:absolute;
+            left: 136px;
+            top: 0px;
+            width: 96vw;
+            
+        }
+        nav ul li{
+            list-style: none;
+            display: flex;
+            padding: 14px 40px;
+            background-color: rgb(255, 191, 0);
+            
+            align-items: center;
+
+        }
+        .brand{
+            height: 100px;
+            position: relative;
+        }
+        a{
+            background-color: rgb(255, 191, 0);
+            cursor: pointer;
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+        }
+        a:hover{
+            background-color: rgb(251, 255, 249);
+        }
+    </style>
 </head>
 <body>
     
+    <img src="Logo.png" alt="Logo" class="brand">
+    <nav id="menubar">
+        <ul>
+            <li style="padding-left: 120px;"><a href="#">Home</a></li>
+            <li><a href="#">View Collections</a></li>
+            <li><a href="#">Shop All</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Track Your Order</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li style="padding-left: 430px;"><a href="#" >Login</a></li>
+            <li><a href="#">Register</a></li>
+        </ul>
+
+    </nav>
 </body>
 </html>
