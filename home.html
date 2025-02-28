@@ -1,64 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Book Cycle</title>
     <style>
-        *{
-            background-color: azure;
-            padding: 0;
-            margin: 0;
+        * {
+            /* background-color: azure; */
+            padding: 0px;
+            margin: 0px;
         }
-        nav ul{
+
+        nav ul {
             display: flex;
             background-color: rgb(255, 191, 0);
-            height: 100px;
-            position:absolute;
-            left: 136px;
-            top: 0px;
-            width: 96vw;
-            
+            height: 70px;
+
+            width: 100vw;
+            position: relative;
         }
-        nav ul li{
+
+        nav ul li {
             list-style: none;
             display: flex;
             padding: 14px 40px;
             background-color: rgb(255, 191, 0);
-            
-            align-items: center;
 
+            align-items: center;
         }
-        .brand{
-            height: 100px;
-            position: relative;
-        }
-        a{
+
+        a {
             background-color: rgb(255, 191, 0);
             cursor: pointer;
             text-decoration: none;
+            font-size: large;
+            /* font-weight: 1000; */
             color: rgb(0, 0, 0);
         }
-        a:hover{
+
+        a:hover {
             background-color: rgb(251, 255, 249);
+        }
+
+        #loginbtn {
+            border: 2px solid rgb(0, 0, 0);
+            border-radius: 15px;
+            padding: 10px;
+        }
+
+        #regbtn {
+            width: auto;
+            border: 2px solid rgb(0, 0, 0);
+            border-radius: 15px;
+            padding: 10px;
+        }
+
+        .slogan {
+            font-family: 'Times New Roman', Times, serif;
+            text-align: left;
+            padding-left: 120px;
+            padding-top: 140px;
+        }
+
+        .bor {
+            margin-top: 50px;
+        }
+
+        #image {
+            align-items: self-end;
+            height: 500px;
+            position: relative;
+            left: 1050px;
+            border-radius: 25px;
+            top: -128px;
+        }
+        .img1{
+            border:2px solid gray; 
+            display: inline-block;
+            padding: 4px;
+            border-radius: 25px;
+        }
+        button{
+            width: 50px;
+            /* padding-left: 50px; */
+            /* align-items; */
+            background-color: greenyellow;
+            border-color: greenyellow;
+            font-family: 'Times New Roman', Times, serif;
+            width: 50px;
+            height: 25px;
+            cursor: pointer;
+
+        }
+        pre{
+            font-family: 'Times New Roman', Times, serif;
+            width:2px;
         }
     </style>
 </head>
+
 <body>
-    
-    <img src="Logo.png" alt="Logo" class="brand">
     <nav id="menubar">
         <ul>
-            <li style="padding-left: 120px;"><a href="#">Home</a></li>
-            <li><a href="#">View Collections</a></li>
-            <li><a href="#">Shop All</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Track Your Order</a></li>
-            <li><a href="#">Contact us</a></li>
-            <li style="padding-left: 430px;"><a href="#" >Login</a></li>
-            <li><a href="#">Register</a></li>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#View Collections">View Collections</a></li>
+            <li><a href="#Shop All">Shop All</a></li>
+            <li><a href="#FAQ">FAQ</a></li>
+            <li><a href="#Track Your Order">Track Your Order</a></li>
+            <li><a href="#Contact us">Contact us</a></li>
+            <li style="padding-left: 430px;"><a href="#" id="loginbtn">Login</a></li>
+            <li><a href="#" id="regbtn">Register</a></li>
         </ul>
-
     </nav>
+    <main>
+        <div class="bor" id="Home">
+            <h1 class="slogan" style="position: static;">Where Old Books Come Alive Again!! </h1>
+            <img src="https://st2.depositphotos.com/2769299/7314/i/450/depositphotos_73146765-stock-photo-a-stack-of-books-on.jpg"
+                alt=".." id="image">
+        </div>
+        <div id="View Collections" style="border: 2px solid gray; padding: 10px;">
+            <div class="img1">
+                <img src="https://www.mahakaalprasad.com/cdn/shop/files/71jiacOsB7L._SY425.jpg?v=1714472043"
+                    alt="bagavathgita" style="height: 300px; width:200px; border-radius: 20px;">
+                <pre>Bagavathgita Book 
+Selling Price:Rs.500 
+MRP:Rs.800 
+                </pre>
+                <button class="Buybtn" >Buy
+                
+                </button>
+            </div>
+        </div>
+    </main>
 </body>
+
 </html>
