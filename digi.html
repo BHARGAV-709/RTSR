@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDFs for Reading</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .main-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .pdf-list {
+            width: 100%;
+            max-width: 600px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .pdf-item {
+            background-color: #f9f9f9;
+            padding: 12px;
+            margin: 8px 0;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+        }
+
+        .pdf-item:hover {
+            background-color: #f0f0f0;
+        }
+
+        .pdf-item a {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .pdf-item a:hover {
+            color: #007bff;
+        }
+
+        .pdf-item p {
+            margin: 0;
+            color: #666;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="main-container">
+    <h1>Available PDFs for Reading</h1>
+    <div class="pdf-list">
+        <div class="pdf-item">
+            <a href="https://ncert.nic.in/textbook/pdf/kemh101.pdf" target="_blank">Document 1:NCERT MAT-CHAP-1</a>
+            <p>Click to read the PDF</p>
+        </div>
+        <div class="pdf-item">
+            <a href="https://ncert.nic.in/textbook/pdf/kemh102.pdf" target="_blank">Document 2:NCERT MAT-CHAP-2</a>
+            <p>Click to read the PDF</p>
+        </div>
+        <div class="pdf-item">
+            <a href="https://ncert.nic.in/textbook/pdf/kemh103.pdf" target="_blank">Document 3:NCERT MAT-CHAP-3 </a>
+            <p>Click to read the PDF</p>
+        </div>
+        <div class="pdf-item">
+            <a href="https://ncert.nic.in/textbook/pdf/kemh104.pdf" target="_blank">Document 4:NCERT MAT-CHAP-4</a>
+            <p>Click to read the PDF</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
