@@ -67,6 +67,14 @@
             margin-top: 50px;
         }
 
+        .bor2 {
+            border: 2px solid gray;
+            padding: 10px;
+            margin-left: 150px;
+            margin-right: 150px;
+            border-radius: 25px;
+        }
+
         #image {
             align-items: self-end;
             height: 500px;
@@ -75,13 +83,32 @@
             border-radius: 25px;
             top: -128px;
         }
-        .img1{
-            border:2px solid gray; 
+
+        .img1 {
+            border: 2px solid gray;
             display: inline-block;
             padding: 4px;
             border-radius: 25px;
+            margin-left: 200px;
         }
-        button{
+
+        .img2 {
+            border: 2px solid gray;
+            display: inline-block;
+            padding: 4px;
+            border-radius: 25px;
+            margin-left: 250px;
+        }
+        .img3{
+            border: 2px solid gray;
+            display: inline-block;
+            padding: 4px;
+            border-radius: 25px;
+            margin-left: 300px;
+
+        }
+
+        button {
             width: 50px;
             /* padding-left: 50px; */
             /* align-items; */
@@ -91,11 +118,14 @@
             width: 50px;
             height: 25px;
             cursor: pointer;
+            border-radius: 25px;
+            margin-left: 70px;
 
         }
-        pre{
+
+        pre {
             font-family: 'Times New Roman', Times, serif;
-            width:2px;
+            width: 2px;
         }
     </style>
 </head>
@@ -107,19 +137,19 @@
             <li><a href="#View Collections">View Collections</a></li>
             <li><a href="#Shop All">Shop All</a></li>
             <li><a href="#FAQ">FAQ</a></li>
-            <li><a href="#Track Your Order">Track Your Order</a></li>
+            <li><a href="digi.html">Digital Reading</a></li>
             <li><a href="#Contact us">Contact us</a></li>
-            <li style="padding-left: 430px;"><a href="#" id="loginbtn">Login</a></li>
-            <li><a href="#" id="regbtn">Register</a></li>
+            <li style="padding-left: 430px;"><a href="login.html" id="loginbtn">Login</a></li>
+            <li><a href="register.html" id="regbtn">Register</a></li>
         </ul>
     </nav>
     <main>
         <div class="bor" id="Home">
-            <h1 class="slogan" style="position: static;">Where Old Books Come Alive Again!! </h1>
+            <h1 class="slogan" style="position: static; ">Where Old Books Come Alive Again!! </h1>
             <img src="https://st2.depositphotos.com/2769299/7314/i/450/depositphotos_73146765-stock-photo-a-stack-of-books-on.jpg"
                 alt=".." id="image">
         </div>
-        <div id="View Collections" style="border: 2px solid gray; padding: 10px;">
+        <div class="bor2" id="View Collections">
             <div class="img1">
                 <img src="https://www.mahakaalprasad.com/cdn/shop/files/71jiacOsB7L._SY425.jpg?v=1714472043"
                     alt="bagavathgita" style="height: 300px; width:200px; border-radius: 20px;">
@@ -127,9 +157,27 @@
 Selling Price:Rs.500 
 MRP:Rs.800 
                 </pre>
-                <button class="Buybtn" >Buy
-                
+                <button class="Buybtn">Buy
+
                 </button>
+            </div>
+            <div class="img2">
+                <img src="https://s26162.pcdn.co/wp-content/uploads/2018/10/invisibleman-1509049531-640x996.jpg"
+                    alt="invisible man" style="height: 300px; width:200px; border-radius: 20px;">
+                <pre>Invisible Man
+Selling Price:Rs.300
+MRP:Rs.500
+                </pre>
+                <button class="Buybtn2">Buy</button>
+            </div>
+            <div class="img3">
+                <img src="https://m.media-amazon.com/images/I/71F4+7rk2eL._UF350,350_QL50_.jpg" 
+                alt="Atomic Habits" style="height: 300px; width:200px; border-radius: 20px;">
+                <pre>Atomic Habits
+Selling Price:Rs.200
+MRP:Rs.600
+                </pre>
+                <button class="Buybtn3">Buy</button>
             </div>
         </div>
     </main>
