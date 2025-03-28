@@ -3,96 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register Page</title>
+    <title>Register - The Book Cycle</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #a7ff9a, #16b8cd);
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
         }
-
-        .register-container {
-            background-color: #fff;
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            width: 100%;
-            max-width: 400px;
-        }
-
-        h2 {
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
             text-align: center;
-            margin-bottom: 20px;
-            color: #333;
+            animation: fadeIn 1s ease-in-out;
         }
-
-        .input-field {
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+            animation: slideDown 1s ease-in-out;
+        }
+        input {
             width: 100%;
             padding: 10px;
             margin: 10px 0;
-            border-radius: 4px;
-            border: 1px solid #ccc;
-            box-sizing: border-box;
-            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            transition: 0.3s;
         }
-
-        .input-field:focus {
-            border-color: #4CAF50;
-            outline: none;
+        input:focus {
+            border-color: #ff6f61;
+            box-shadow: 0 0 8px #ff6f61;
         }
-
-        .register-btn {
+        button {
             width: 100%;
-            padding: 12px;
-            background-color: #4CAF50;
-            color: white;
+            padding: 10px;
+            background: #ff6f61;
             border: none;
-            border-radius: 4px;
+            color: white;
             font-size: 16px;
+            border-radius: 5px;
             cursor: pointer;
-            transition: background-color 0.3s;
+            transition: 0.3s;
         }
-
-        .register-btn:hover {
-            background-color: #45a049;
+        button:hover {
+            background: #ffd52f;
+            transform: scale(1.05);
         }
-
-        .login-link {
-            text-align: center;
-            margin-top: 15px;
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
         }
-
-        .login-link a {
-            color: #007bff;
-            text-decoration: none;
-        }
-
-        .login-link a:hover {
-            text-decoration: underline;
+        @keyframes slideDown {
+            from { opacity: 0; transform: translateY(-50px); }
+            to { opacity: 1; transform: translateY(0); }
         }
     </style>
 </head>
 <body>
-
-<div class="register-container">
-    <h2>Register</h2>
-    <form action="your-register-endpoint" method="POST">
-        <input type="text" name="firstname" class="input-field" placeholder="First Name" required>
-        <input type="text" name="lastname" class="input-field" placeholder="Last Name" required>
-        <input type="tel" name="mobilenumber" class="input-field" placeholder="Mobile Number" required>
-        <input type="email" name="email" class="input-field" placeholder="Email" required>
-        <input type="password" name="password" class="input-field" placeholder="Password" required>
-        <input type="password" name="confirm-password" class="input-field" placeholder="Confirm Password" required>
-        <button type="submit" class="register-btn">Register</button>
-    </form>
-    <div class="login-link">
-        <p>Already have an account? <a href="login.html">Login here</a></p>
+    <div class="container">
+        <h2>Register to The Book Cycle</h2>
+        <form>
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Password" required>
+            <input type="password" placeholder="Confirm Password" required>
+            <button type="submit">Register</button>
+        </form>
     </div>
-</div>
-
 </body>
 </html>
